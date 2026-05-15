@@ -1,60 +1,53 @@
 # Customer Retention Prediction
 
-## Descripción
-Este proyecto tiene como objetivo predecir si un cliente regresará o no a una plataforma de comercio electrónico, utilizando técnicas básicas de ciencia de datos y modelos de clasificación.
+## Overview
+Machine Learning project to predict whether a customer will return to an e-commerce platform.
+
+> Note: The analysis notebook is written in Spanish, as this project was developed for an academic context in Mexico.
 
 ## Dataset
-El conjunto de datos incluye información de clientes como:
-- Edad
-- Gasto
-- Interacción con marketing
-- Género
+The dataset includes customer-related variables such as:
+- Age
+- Spending
+- Marketing interaction
+- Gender
 
-Estas variables permiten analizar el comportamiento de compra y su relación con el retorno del cliente.
+These features are used to analyze customer behavior and predict retention.
 
-## Proceso
-
-El proyecto se desarrolló siguiendo las etapas principales de ciencia de datos:
-
-1. Exploración de datos  
-   - Revisión de estructura, tipos de datos y estadísticas descriptivas  
-
-2. Visualización  
-   - Análisis de distribución de variables como edad, gasto y género  
-
-3. Preprocesamiento  
-   - Codificación de variables categóricas  
-   - Escalado de variables numéricas  
-
-4. Modelado  
+## Workflow
+1. Data exploration  
+2. Data visualization  
+3. Data preprocessing  
+   - Encoding categorical variables  
+   - Feature scaling  
+4. Model training  
    - Logistic Regression  
    - Decision Tree  
    - Random Forest  
+5. Model evaluation  
+6. Hyperparameter tuning (GridSearchCV)
 
-5. Evaluación  
-   - Comparación de modelos mediante precisión  
-   - Selección del mejor modelo  
+## Results
+- Best model: Logistic Regression  
+- Accuracy: 100% (test set)
 
-6. Optimización  
-   - Ajuste de hiperparámetros con GridSearchCV  
+The confusion matrix showed perfect classification on the available data.
 
-## Resultados
+## Limitations
+The dataset is small and simplified, so results may not generalize well to real-world scenarios.
 
-El modelo de regresión logística fue seleccionado como el más adecuado, obteniendo una precisión del 100% en el conjunto de prueba.
-
-La matriz de confusión mostró que el modelo clasifica correctamente todos los casos, sin errores de predicción.
-
-## Conclusión
-
-El modelo permite identificar clientes con baja probabilidad de retorno, lo cual puede ser utilizado para implementar estrategias de retención como promociones personalizadas o campañas de seguimiento.
-
-Sin embargo, debido al tamaño y simplicidad del conjunto de datos, los resultados no garantizan el mismo desempeño en escenarios reales más complejos.
-
-## Tecnologías utilizadas
-
+## Tech Stack
 - Python  
 - Pandas  
 - NumPy  
 - Matplotlib  
 - Scikit-learn  
 
+## Project Structure
+data.csv
+notebook.ipynb
+README.md
+
+## How to Run
+1. Open the notebook
+2. Run all cells
