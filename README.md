@@ -29,7 +29,7 @@ These features are used to analyze customer behavior and predict retention.
 
 ## Results
 - Best model: Logistic Regression  
-- Accuracy: 100% (test set)
+- Accuracy: 100% (test set, limited dataset)
 
 The confusion matrix showed perfect classification on the available data.
 
